@@ -1,3 +1,5 @@
+-- all credits go to the rightful creators and/or owners, i simply changed a few things about this in order to fit in my likings
+
 -- Services
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -311,13 +313,13 @@ function Library:ToolTip(Text)
 		ToolTip["2"]["Text"] = Text
 		ToolTip["2"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 		ToolTip["2"]["Name"] = [[ToolTip]]
-		ToolTip["2"]["Font"] = Enum.Font.Gotham
+		ToolTip["2"]["Font"] = Enum.Font.Code
 		ToolTip["2"]["BackgroundTransparency"] = 0.5
 		ToolTip["2"]["Position"] = UDim2.new(0, Mouse.X, 0, Mouse.Y)
 		local Bound = TextService:GetTextSize(
 			Text,
 			12,
-			Enum.Font.Gotham,
+			Enum.Font.Code,
 			Vector2.new(ToolTip["2"].AbsoluteSize.X, ToolTip["2"].AbsoluteSize.Y)
 		)
 		ToolTip["2"]["Size"] = UDim2.new(0, (Bound.X + 28), 0, 18)
@@ -871,8 +873,8 @@ function Library:Create(options)
 		Gui["3"]["ZIndex"] = 2
 		Gui["3"]["BorderSizePixel"] = 0
 		Gui["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-		Gui["3"]["Size"] = UDim2.new(0, 498, 0, 40)
-		Gui["3"]["Position"] = UDim2.new(0, 0, 0, 455)
+		Gui["3"]["Size"] = UDim2.new(0, 250, 0, 40)
+		Gui["3"]["Position"] = UDim2.new(0, 0, 0, 355)
 		Gui["3"]["Name"] = [[NavBar]]
 
 		-- StarterGui.Vision Lib v2.GuiFrame.NavBar.UICorner
@@ -891,7 +893,7 @@ function Library:Create(options)
 		Gui["5"]["Size"] = UDim2.new(0, 89, 0, 40)
 		Gui["5"]["Text"] = [[14:12]]
 		Gui["5"]["Name"] = [[Time]]
-		Gui["5"]["Font"] = Enum.Font.GothamBold
+		Gui["5"]["Font"] = Enum.Font.Code
 		Gui["5"]["BackgroundTransparency"] = 1
 
 		-- StarterGui.Vision Lib v2.GuiFrame.NavBar.TabButtonContainer
@@ -932,7 +934,7 @@ function Library:Create(options)
 		Gui["15"]["Size"] = UDim2.new(0, 18, 0, 40)
 		Gui["15"]["Name"] = [[LeftControl]]
 		Gui["15"]["Text"] = [[<]]
-		Gui["15"]["Font"] = Enum.Font.GothamBold
+		Gui["15"]["Font"] = Enum.Font.Code
 		Gui["15"]["Position"] = UDim2.new(0, 458, 0, 0)
 		Gui["15"]["BackgroundTransparency"] = 1
 
@@ -948,7 +950,7 @@ function Library:Create(options)
 		Gui["16"]["Size"] = UDim2.new(0, 18, 0, 40)
 		Gui["16"]["Name"] = [[RightControl]]
 		Gui["16"]["Text"] = [[>]]
-		Gui["16"]["Font"] = Enum.Font.GothamBold
+		Gui["16"]["Font"] = Enum.Font.Code
 		Gui["16"]["Position"] = UDim2.new(0, 475, 0, 0)
 		Gui["16"]["BackgroundTransparency"] = 1
 
@@ -963,7 +965,7 @@ function Library:Create(options)
 		Gui["18"] = Instance.new("Frame", Gui["2"])
 		Gui["18"]["BorderSizePixel"] = 0
 		Gui["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-		Gui["18"]["Size"] = UDim2.new(0, 498, 0, 452)
+		Gui["18"]["Size"] = UDim2.new(0, 250, 0, 150)
 		Gui["18"]["Name"] = [[MainFrame]]
 		Gui["18"]["ClipsDescendants"] = true
 
@@ -1006,7 +1008,7 @@ function Library:Create(options)
 		Gui["1c"]["Size"] = UDim2.new(0, 212, 0, 27)
 		Gui["1c"]["Text"] = [[Home Tab]]
 		Gui["1c"]["Name"] = [[Title]]
-		Gui["1c"]["Font"] = Enum.Font.GothamBold
+		Gui["1c"]["Font"] = Enum.Font.Code
 		Gui["1c"]["BackgroundTransparency"] = 1
 		Gui["1c"]["Position"] = UDim2.new(0, 14, 0, 5)
 	end
@@ -1141,7 +1143,7 @@ function Library:Create(options)
 		StartAnimation["95"]["Size"] = UDim2.new(0, 255, 0, 32)
 		StartAnimation["95"]["Text"] = options.Name
 		StartAnimation["95"]["Name"] = [[Title]]
-		StartAnimation["95"]["Font"] = Enum.Font.GothamMedium
+		StartAnimation["95"]["Font"] = Enum.Font.Code
 		StartAnimation["95"]["BackgroundTransparency"] = 1
 		StartAnimation["95"]["Position"] = UDim2.new(0, 10, 0, 5)
 
@@ -1159,7 +1161,7 @@ function Library:Create(options)
 		StartAnimation["96"]["Size"] = UDim2.new(0, 255, 0, 18)
 		StartAnimation["96"]["Text"] = options.Footer
 		StartAnimation["96"]["Name"] = [[Title]]
-		StartAnimation["96"]["Font"] = Enum.Font.Gotham
+		StartAnimation["96"]["Font"] = Enum.Font.Code
 		StartAnimation["96"]["BackgroundTransparency"] = 1
 		StartAnimation["96"]["Position"] = UDim2.new(0, 12, 0, 32)
 
@@ -1229,7 +1231,7 @@ function Library:Create(options)
 		StartAnimation["9e"]["Size"] = UDim2.new(0, 282, 0, 70)
 		StartAnimation["9e"]["Text"] = [[Welcome, ]] .. Players.LocalPlayer.Name
 		StartAnimation["9e"]["Name"] = [[WelcomeText]]
-		StartAnimation["9e"]["Font"] = Enum.Font.GothamMedium
+		StartAnimation["9e"]["Font"] = Enum.Font.Code
 		StartAnimation["9e"]["BackgroundTransparency"] = 1
 		StartAnimation["9e"]["Position"] = UDim2.new(0, 98, 0, 49)
 	end
@@ -1321,7 +1323,7 @@ function Library:Create(options)
 					KeySystem["a4"]["Size"] = UDim2.new(0.8999999761581421, 0, 0.8999999761581421, 0)
 					KeySystem["a4"]["Text"] = [[]]
 					KeySystem["a4"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
-					KeySystem["a4"]["Font"] = Enum.Font.Gotham
+					KeySystem["a4"]["Font"] = Enum.Font.Code
 
 					-- StarterGui.Vision Lib v2.KeySystemFrame.Main.Key.TextBox.UICorner
 					KeySystem["a5"] = Instance.new("UICorner", KeySystem["a4"])
@@ -1340,7 +1342,7 @@ function Library:Create(options)
 					KeySystem["a6"]["Size"] = UDim2.new(0, 158, 0, 16)
 					KeySystem["a6"]["Text"] = [[Key System]]
 					KeySystem["a6"]["Name"] = [[KeySystemTitle]]
-					KeySystem["a6"]["Font"] = Enum.Font.GothamMedium
+					KeySystem["a6"]["Font"] = Enum.Font.Code
 					KeySystem["a6"]["BackgroundTransparency"] = 1
 					KeySystem["a6"]["Position"] = UDim2.new(0, 34, 0, 14)
 
@@ -1369,7 +1371,7 @@ function Library:Create(options)
 					KeySystem["a9"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
 					KeySystem["a9"]["Size"] = UDim2.new(0.949999988079071, 0, 0.800000011920929, 0)
 					KeySystem["a9"]["Text"] = [[Note: Join our discord to get the key!]]
-					KeySystem["a9"]["Font"] = Enum.Font.Gotham
+					KeySystem["a9"]["Font"] = Enum.Font.Code
 					KeySystem["a9"]["BackgroundTransparency"] = 1
 					KeySystem["a9"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
 
@@ -1535,7 +1537,7 @@ function Library:Create(options)
 					KeySystem["ab"]["Size"] = UDim2.new(0, 100, 0, 19)
 					KeySystem["ab"]["Name"] = [[DiscordServerButton]]
 					KeySystem["ab"]["Text"] = [[Copy discord invite]]
-					KeySystem["ab"]["Font"] = Enum.Font.Gotham
+					KeySystem["ab"]["Font"] = Enum.Font.Code
 					KeySystem["ab"]["Position"] = UDim2.new(0, 104, 0, 118)
 					KeySystem["ab"]["MaxVisibleGraphemes"] = 0
 
@@ -1549,7 +1551,7 @@ function Library:Create(options)
 					ThemeInstances["Text"][#ThemeInstances["Text"] + 1] = KeySystem["ac"]
 					KeySystem["ac"]["Size"] = UDim2.new(1, 0, 1, 0)
 					KeySystem["ac"]["Text"] = [[Copy discord invite]]
-					KeySystem["ac"]["Font"] = Enum.Font.GothamMedium
+					KeySystem["ac"]["Font"] = Enum.Font.Code
 					KeySystem["ac"]["BackgroundTransparency"] = 1
 
 					-- StarterGui.Vision Lib v2.KeySystemFrame.Main.DiscordServerButton.UIStroke
@@ -1954,7 +1956,7 @@ function Library:Create(options)
 				Section["20"]["Size"] = UDim2.new(0, 408, 0, 18)
 				Section["20"]["Text"] = options.Name
 				Section["20"]["Name"] = [[SectionLabel]]
-				Section["20"]["Font"] = Enum.Font.GothamMedium
+				Section["20"]["Font"] = Enum.Font.Code
 				Section["20"]["BackgroundTransparency"] = 1
 				Section["20"]["Position"] = UDim2.new(0, 8, 0, 6)
 
@@ -2038,7 +2040,7 @@ function Library:Create(options)
 					Button["77"]["Size"] = UDim2.new(0, 301, 0, 33)
 					Button["77"]["Text"] = options.Name
 					Button["77"]["Name"] = [[Label]]
-					Button["77"]["Font"] = Enum.Font.GothamMedium
+					Button["77"]["Font"] = Enum.Font.Code
 					Button["77"]["BackgroundTransparency"] = 1
 					Button["77"]["Position"] = UDim2.new(0, 21, 0, 0)
 
@@ -2229,7 +2231,7 @@ function Library:Create(options)
 					Toggle["27"]["Size"] = UDim2.new(0, 38, 0, 18)
 					Toggle["27"]["Name"] = [[Toggle]]
 					Toggle["27"]["Text"] = [[]]
-					Toggle["27"]["Font"] = Enum.Font.SourceSans
+					Toggle["27"]["Font"] = Enum.Font.Codd
 					Toggle["27"]["Position"] = UDim2.new(0, 373, 0, 8)
 
 					-- StarterGui.Vision Lib v2.GuiFrame.MainFrame.Container.SectionFrame.SectionContainer.Toggle.Toggle.UICorner
@@ -2244,7 +2246,7 @@ function Library:Create(options)
 					Toggle["2a"]["Size"] = UDim2.new(0, 23, 0, 20)
 					Toggle["2a"]["Text"] = [[]]
 					Toggle["2a"]["Name"] = [[Indicator]]
-					Toggle["2a"]["Font"] = Enum.Font.SourceSans
+					Toggle["2a"]["Font"] = Enum.Font.Code
 					Toggle["2a"]["Position"] = UDim2.new(0, 0, 0, -1)
 
 					ThemeInstances["ThemeTrue"][#ThemeInstances["ThemeTrue"] + 1] = Toggle["2a"]
@@ -2269,7 +2271,7 @@ function Library:Create(options)
 					Toggle["2d"]["Size"] = UDim2.new(0, 301, 0, 33)
 					Toggle["2d"]["Text"] = options.Name
 					Toggle["2d"]["Name"] = [[Label]]
-					Toggle["2d"]["Font"] = Enum.Font.GothamMedium
+					Toggle["2d"]["Font"] = Enum.Font.Code
 					Toggle["2d"]["BackgroundTransparency"] = 1
 					Toggle["2d"]["Position"] = UDim2.new(0, 21, 0, 0)
 
@@ -2493,7 +2495,7 @@ end)
 					Slider["39"]["Size"] = UDim2.new(0, 301, 0, 33)
 					Slider["39"]["Text"] = options.Name
 					Slider["39"]["Name"] = [[Label]]
-					Slider["39"]["Font"] = Enum.Font.GothamMedium
+					Slider["39"]["Font"] = Enum.Font.Codd
 					Slider["39"]["BackgroundTransparency"] = 1
 					Slider["39"]["Position"] = UDim2.new(0, 21, 0, 0)
 
@@ -2556,7 +2558,7 @@ end)
 					Slider["3g"]["Size"] = UDim2.new(0, 45, 0, 18)
 					Slider["3g"]["Text"] = [[]]
 					Slider["3g"]["Position"] = UDim2.new(0, 373, 0, 6)
-					Slider["3g"]["Font"] = Enum.Font.Gotham
+					Slider["3g"]["Font"] = Enum.Font.Code
 					Slider["3g"]["BorderSizePixel"] = 0
 
 					-- StarterGui.Vision Lib v2.GuiFrame.MainFrame.Container.SectionFrame.SectionContainer.Slider.TextBox
@@ -2807,7 +2809,7 @@ end)
 					Keybind["5c"]["Size"] = UDim2.new(0, 301, 0, 33)
 					Keybind["5c"]["Text"] = options.Name
 					Keybind["5c"]["Name"] = [[Label]]
-					Keybind["5c"]["Font"] = Enum.Font.GothamMedium
+					Keybind["5c"]["Font"] = Enum.Font.Code
 					Keybind["5c"]["BackgroundTransparency"] = 1
 					Keybind["5c"]["Position"] = UDim2.new(0, 21, 0, 0)
 
@@ -2824,7 +2826,7 @@ end)
 					ThemeInstances["Text"][#ThemeInstances["Text"] + 1] = Keybind["5d"]
 					Keybind["5d"]["Size"] = UDim2.new(0, 80, 0, 21)
 					Keybind["5d"]["Text"] = [[]]
-					Keybind["5d"]["Font"] = Enum.Font.Gotham
+					Keybind["5d"]["Font"] = Enum.Font.Code
 					Keybind["5d"]["Position"] = UDim2.new(0.7900000214576721, 0, 0.17599999904632568, 0)
 
 					-- StarterGui.Vision Lib v2.GuiFrame.MainFrame.Container.SectionFrame.SectionContainer.Keybind.TextButton.UICorner
@@ -2847,7 +2849,7 @@ end)
 					ThemeInstances["Text"][#ThemeInstances["Text"] + 1] = Keybind["60"]
 					Keybind["60"]["Size"] = UDim2.new(0, 79, 0, 21)
 					Keybind["60"]["Text"] = [[LeftShift]]
-					Keybind["60"]["Font"] = Enum.Font.Gotham
+					Keybind["60"]["Font"] = Enum.Font.Code
 					Keybind["60"]["BackgroundTransparency"] = 1
 
 					local keybindText = string.gsub(tostring(Keybind.Keybind), "Enum.KeyCode.", "")
@@ -3010,7 +3012,7 @@ end)
 					Textbox["31"]["Size"] = UDim2.new(0, 301, 0, 33)
 					Textbox["31"]["Text"] = options.Name
 					Textbox["31"]["Name"] = [[Label]]
-					Textbox["31"]["Font"] = Enum.Font.GothamMedium
+					Textbox["31"]["Font"] = Enum.Font.Code
 					Textbox["31"]["BackgroundTransparency"] = 1
 					Textbox["31"]["Position"] = UDim2.new(0, 21, 0, 0)
 
@@ -3045,7 +3047,7 @@ end)
 					Textbox["34"]["Size"] = UDim2.new(0, 92, 0, 21)
 					Textbox["34"]["Text"] = [[]]
 					Textbox["34"]["Position"] = UDim2.new(0.7612293362617493, 0, 0.1764705926179886, 0)
-					Textbox["34"]["Font"] = Enum.Font.Gotham
+					Textbox["34"]["Font"] = Enum.Font.Code
 					Textbox["34"]["TextWrapped"] = false
 					Textbox["34"]["PlaceholderText"] = [[...]]
 
@@ -3262,7 +3264,7 @@ end)
 					BigTextbox["69"]["Size"] = UDim2.new(0, 301, 0, 33)
 					BigTextbox["69"]["Text"] = options.Name
 					BigTextbox["69"]["Name"] = [[Label]]
-					BigTextbox["69"]["Font"] = Enum.Font.GothamMedium
+					BigTextbox["69"]["Font"] = Enum.Font.Code
 					BigTextbox["69"]["BackgroundTransparency"] = 1
 					BigTextbox["69"]["Position"] = UDim2.new(0, 21, 0, 0)
 
@@ -3312,7 +3314,7 @@ end)
 					BigTextbox["6f"]["Size"] = UDim2.new(0, 389, 0, 21)
 					BigTextbox["6f"]["Text"] = [[]]
 					BigTextbox["6f"]["Position"] = UDim2.new(0, 13, 0, 2)
-					BigTextbox["6f"]["Font"] = Enum.Font.Gotham
+					BigTextbox["6f"]["Font"] = Enum.Font.Code
 					BigTextbox["6f"]["BackgroundTransparency"] = 1
 					BigTextbox["6f"]["AutomaticSize"] = Enum.AutomaticSize.Y
 					BigTextbox["6f"]["TextWrapped"] = true
@@ -3525,7 +3527,7 @@ end)
 					Dropdown["48"]["Size"] = UDim2.new(0, 301, 0, 33)
 					Dropdown["48"]["Text"] = options.Name
 					Dropdown["48"]["Name"] = [[Label]]
-					Dropdown["48"]["Font"] = Enum.Font.GothamMedium
+					Dropdown["48"]["Font"] = Enum.Font.Code
 					Dropdown["48"]["BackgroundTransparency"] = 1
 					Dropdown["48"]["Position"] = UDim2.new(0, 21, 0, 0)
 
@@ -3596,7 +3598,7 @@ end)
 
 					ThemeInstances["Text"][#ThemeInstances["Text"] + 1] = Dropdown["5b"]
 					Dropdown["5b"]["Size"] = UDim2.new(0, 50, 0, 15)
-					Dropdown["5b"]["Font"] = Enum.Font.Gotham
+					Dropdown["5b"]["Font"] = Enum.Font.Code
 
 					-- StarterGui.Vision Lib v2.GuiFrame.MainFrame.Container.SectionFrame.SectionContainer.Dropdown.Frame.TextLabel.UICorner
 					Dropdown["5c"] = Instance.new("UICorner", Dropdown["5b"])
@@ -3827,7 +3829,7 @@ end)
 							DropdownOption["4f"]["Size"] = UDim2.new(0, 301, 0, 33)
 							DropdownOption["4f"]["Text"] = tostring(value)
 							DropdownOption["4f"]["Name"] = [[Label]]
-							DropdownOption["4f"]["Font"] = Enum.Font.GothamMedium
+							DropdownOption["4f"]["Font"] = Enum.Font.Code
 							DropdownOption["4f"]["BackgroundTransparency"] = 1
 							DropdownOption["4f"]["Position"] = UDim2.new(0, 14, 0, -3)
 
@@ -4054,7 +4056,7 @@ end)
 					ThemeInstances["Text"][#ThemeInstances["Text"] + 1] = Label["7b"]
 					Label["7b"]["Name"] = "Label"
 					Label["7b"]["Text"] = options.Name
-					Label["7b"]["Font"] = Enum.Font.GothamMedium
+					Label["7b"]["Font"] = Enum.Font.Code
 					Label["7b"]["BackgroundTransparency"] = 1
 					Label["7b"]["Position"] = UDim2.new(0, 21, 0, 0)
 					Label["7b"]["TextWrapped"] = true
@@ -4269,7 +4271,7 @@ end)
 					Colorpicker["8a"]["Size"] = UDim2.new(0, 301, 0, 33)
 					Colorpicker["8a"]["Text"] = options.Name
 					Colorpicker["8a"]["Name"] = [[Label]]
-					Colorpicker["8a"]["Font"] = Enum.Font.GothamMedium
+					Colorpicker["8a"]["Font"] = Enum.Font.Code
 					Colorpicker["8a"]["BackgroundTransparency"] = 1
 					Colorpicker["8a"]["Position"] = UDim2.new(0, 21, 0, 0)
 
@@ -4321,7 +4323,7 @@ end)
 					Colorpicker["8e"]["Size"] = UDim2.new(0, 42, 0, 18)
 					Colorpicker["8e"]["Text"] = [[256]]
 					Colorpicker["8e"]["Position"] = UDim2.new(0.4914590120315552, 0, 0.25, 0)
-					Colorpicker["8e"]["Font"] = Enum.Font.Gotham
+					Colorpicker["8e"]["Font"] = Enum.Font.Code
 
 					-- StarterGui.Vision Lib v2.GuiFrame.MainFrame.Container.SectionFrame.SectionContainer.Colorpicker.HSVHolder.Red.TextBox.UICorner
 					Colorpicker["8f"] = Instance.new("UICorner", Colorpicker["8e"])
@@ -4352,7 +4354,7 @@ end)
 					Colorpicker["92"]["Size"] = UDim2.new(0, 45, 0, 25)
 					Colorpicker["92"]["BorderColor3"] = Color3.fromRGB(28, 43, 54)
 					Colorpicker["92"]["Text"] = [[Sat]]
-					Colorpicker["92"]["Font"] = Enum.Font.Gotham
+					Colorpicker["92"]["Font"] = Enum.Font.Code
 					Colorpicker["92"]["BackgroundTransparency"] = 1
 					Colorpicker["92"]["Position"] = UDim2.new(-0.0012891516089439392, 0, 0.13513514399528503, 0)
 
@@ -4371,7 +4373,7 @@ end)
 					Colorpicker["93"]["Size"] = UDim2.new(0, 42, 0, 18)
 					Colorpicker["93"]["Text"] = [[256]]
 					Colorpicker["93"]["Position"] = UDim2.new(0.4914590120315552, 0, 0.25, 0)
-					Colorpicker["93"]["Font"] = Enum.Font.Gotham
+					Colorpicker["93"]["Font"] = Enum.Font.Code
 
 					-- StarterGui.Vision Lib v2.GuiFrame.MainFrame.Container.SectionFrame.SectionContainer.Colorpicker.HSVHolder.Sat.TextBox.UICorner
 					Colorpicker["94"] = Instance.new("UICorner", Colorpicker["93"])
@@ -4397,7 +4399,7 @@ end)
 					Colorpicker["96"]["Size"] = UDim2.new(0, 45, 0, 25)
 					Colorpicker["96"]["BorderColor3"] = Color3.fromRGB(28, 43, 54)
 					Colorpicker["96"]["Text"] = [[Value]]
-					Colorpicker["96"]["Font"] = Enum.Font.Gotham
+					Colorpicker["96"]["Font"] = Enum.Font.Code
 					Colorpicker["96"]["BackgroundTransparency"] = 1
 					Colorpicker["96"]["Position"] = UDim2.new(-0.0012891516089439392, 0, 0.13513514399528503, 0)
 
@@ -4416,7 +4418,7 @@ end)
 					Colorpicker["97"]["Size"] = UDim2.new(0, 42, 0, 18)
 					Colorpicker["97"]["Text"] = [[256]]
 					Colorpicker["97"]["Position"] = UDim2.new(0.4914590120315552, 0, 0.25, 0)
-					Colorpicker["97"]["Font"] = Enum.Font.Gotham
+					Colorpicker["97"]["Font"] = Enum.Font.Code
 
 					-- StarterGui.Vision Lib v2.GuiFrame.MainFrame.Container.SectionFrame.SectionContainer.Colorpicker.HSVHolder.Value.TextBox.UICorner
 					Colorpicker["98"] = Instance.new("UICorner", Colorpicker["97"])
@@ -4444,7 +4446,7 @@ end)
 					Colorpicker["9a"]["Size"] = UDim2.new(0, 64, 0, 25)
 					Colorpicker["9a"]["BorderColor3"] = Color3.fromRGB(28, 43, 54)
 					Colorpicker["9a"]["Text"] = [[Hex Code]]
-					Colorpicker["9a"]["Font"] = Enum.Font.Gotham
+					Colorpicker["9a"]["Font"] = Enum.Font.Code
 					Colorpicker["9a"]["BackgroundTransparency"] = 1
 					Colorpicker["9a"]["Position"] = UDim2.new(-0.14590352773666382, 0, 0.13513512909412384, 0)
 
@@ -4464,7 +4466,7 @@ end)
 					Colorpicker["9b"]["Size"] = UDim2.new(0, 63, 0, 18)
 					Colorpicker["9b"]["Text"] = [[#f1eaff]]
 					Colorpicker["9b"]["Position"] = UDim2.new(0.5354151725769043, 0, 0.25, 0)
-					Colorpicker["9b"]["Font"] = Enum.Font.Gotham
+					Colorpicker["9b"]["Font"] = Enum.Font.Code
 
 					-- StarterGui.Vision Lib v2.GuiFrame.MainFrame.Container.SectionFrame.SectionContainer.Colorpicker.HexTextbox.TextBox.UICorner
 					Colorpicker["9c"] = Instance.new("UICorner", Colorpicker["9b"])
@@ -4478,7 +4480,7 @@ end)
 					Colorpicker["9d"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
 					Colorpicker["9d"]["Size"] = UDim2.new(0, 423, 0, 34)
 					Colorpicker["9d"]["Name"] = [[ToggleDetector]]
-					Colorpicker["9d"]["Font"] = Enum.Font.SourceSans
+					Colorpicker["9d"]["Font"] = Enum.Font.Code
 					Colorpicker["9d"]["BackgroundTransparency"] = 1
 				end
 
@@ -5450,7 +5452,7 @@ function Library:Notify(options)
 		Notification["88"]["Size"] = UDim2.new(0, 206, 0, 21)
 		Notification["88"]["Text"] = options.Name
 		Notification["88"]["Name"] = [[NotifName]]
-		Notification["88"]["Font"] = Enum.Font.GothamMedium
+		Notification["88"]["Font"] = Enum.Font.Code
 		Notification["88"]["BackgroundTransparency"] = 1
 		Notification["88"]["Position"] = UDim2.new(0, 34, 0, 3)
 
@@ -5476,7 +5478,7 @@ function Library:Notify(options)
 		Notification["8a"]["Size"] = UDim2.new(0, 242, 0, 28)
 		Notification["8a"]["Text"] = options.Text
 		Notification["8a"]["Name"] = [[NotifText]]
-		Notification["8a"]["Font"] = Enum.Font.GothamMedium
+		Notification["8a"]["Font"] = Enum.Font.Code
 		Notification["8a"]["BackgroundTransparency"] = 1
 		Notification["8a"]["Position"] = UDim2.new(0, 10, 0, 23)
 
@@ -5621,7 +5623,7 @@ function Library:ForceNotify(options)
 		Notification["88"]["Size"] = UDim2.new(0, 206, 0, 21)
 		Notification["88"]["Text"] = options.Name
 		Notification["88"]["Name"] = [[NotifName]]
-		Notification["88"]["Font"] = Enum.Font.GothamMedium
+		Notification["88"]["Font"] = Enum.Font.Code
 		Notification["88"]["BackgroundTransparency"] = 1
 		Notification["88"]["Position"] = UDim2.new(0, 34, 0, 3)
 
@@ -5647,7 +5649,7 @@ function Library:ForceNotify(options)
 		Notification["8a"]["Size"] = UDim2.new(0, 242, 0, 28)
 		Notification["8a"]["Text"] = options.Text
 		Notification["8a"]["Name"] = [[NotifText]]
-		Notification["8a"]["Font"] = Enum.Font.GothamMedium
+		Notification["8a"]["Font"] = Enum.Font.Code
 		Notification["8a"]["BackgroundTransparency"] = 1
 		Notification["8a"]["Position"] = UDim2.new(0, 10, 0, 23)
 
